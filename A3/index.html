@@ -1,46 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            margin: 20px;
-        }
-        img{
-            width: 50%;
-            height: 50%;
-            object-fit: fill;
-            display: block;
-        }
-    </style>
+<title>Table with Images</title>
+<style>
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #222222;
+        color: #EAEAEA;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #1C1C1C;
+    }
+    th, td {
+        border: 1px solid #444444;
+        padding: 15px; 
+        text-align: center;
+        vertical-align: middle; 
+    }
+    img {
+        max-height: 80px; 
+        object-fit: contain;
+        display: block; 
+        margin: auto; 
+    }
+
+
+    tr {
+        transition: background-color 0.3s ease;
+    }
+
+    td:hover {
+        background-color: #2F2F2F; 
+        cursor: pointer;
+    }
+
+</style>
 </head>
 <body>
-    <table border="1" height="90%">
-        <th colspan="2">
-            Marcas de autos
-        </th>
-        <tr height="18%">
-            <td>
-               <a href="https://www.mazda.mx/" target="_blank">
-                <img src="images/Mazda_logo.png" alt="">
-               </a> 
-            </td>
-            <td>
-                Mazda
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://www.ford.mx/" target="_blank">
-                    <img src="images/Ford_logo_flat.svg.png" alt="">
-                </a>
-            </td>
-        </tr>
 
-    </table>
+<table>
+    <th colspan="2">
+        Marcas de autos
+    </th>
+    <tr>
+        <td>
+            <a href="https://nissan.com.mx" target="_blank">
+                <img src="images/nissan logo.png">
+            </a>
+        </td>
+        <td>Nissan</td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://www.toyota.mx/" target="_blank">
+                <img src="images/Toyota_logo.png">
+            </a>
+        </td>
+        <td>Toyota</td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://subaru.com.mx/" target="_blank">
+                <img src="images/Subaru_logo.png">
+            </a>
+        </td>
+        <td>Subaru</td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://landrover.com.mx/" target="_blank">
+                <img src="images/land-roverin-logo.svg">
+            </a>
+        </td>
+        <td>Land Rover</td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="https://jeep.com.mx/" target="_blank">
+                <img src="images/Jeep-Logo.png">
+            </a>
+        </td>
+        <td>Jeep</td>
+    </tr>
+</table>
+
 </body>
 </html>
