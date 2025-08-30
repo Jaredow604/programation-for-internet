@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas Anidadas</title>
     <style>
-        /* Estilos generales para centrar y dar borde a las tablas */
         body {
             display: flex;
             justify-content: center;
@@ -20,35 +19,28 @@
             border-collapse: collapse;
             border: 2px solid black;
         }
-
-        /* Estilos para las celdas de la tabla principal */
         .main-cell {
             border: 1px solid grey;
-            padding: 20px; /* Añade espacio alrededor de las tablas anidadas */
-            vertical-align: top; /* Alinea el contenido al tope */
-            text-align: center; /* Centra horizontalmente */
+            padding: 20px; 
+            vertical-align: top; 
+            text-align: center; 
         }
-
-        /* Estilos para las tablas anidadas */
         .nested-table {
-            width: 90%; /* Hacemos la tabla más pequeña para que se vea el centrado */
+            width: 90%; 
             height: 90%;
             background-color: white;
-            margin: auto; /* Centra la tabla */
+            margin: auto; 
         }
         
         .nested-table td {
-            padding: 8px; /* Añadimos padding a las celdas internas */
+            padding: 8px; 
         }
     </style>
 </head>
 <body>
 
-    <!-- Tabla Principal 2x2 -->
     <table style="width: 960px; height: 800px;">
-        <!-- Primera Fila -->
         <tr style="height: 50%;">
-            <!-- Celda Superior Izquierda (de tabla1.html) -->
             <td class="main-cell" style="width: 50%;">
                 <table class="nested-table">
                     <tr style="height:50px">
@@ -60,7 +52,6 @@
                     </tr>
                 </table>
             </td>
-            <!-- Celda Superior Derecha (de tabla2.html) -->
             <td class="main-cell" style="width: 50%;">
                 <table class="nested-table">
                     <tr style="height:50px">
@@ -76,9 +67,7 @@
                 </table>
             </td>
         </tr>
-        <!-- Segunda Fila -->
         <tr style="height: 50%;">
-            <!-- Celda Inferior Izquierda (de tabla3.html) -->
             <td class="main-cell" style="width: 50%;">
                 <table class="nested-table">
                     <tr style="height:50px">
@@ -96,7 +85,6 @@
                     </tr>
                 </table>
             </td>
-            <!-- Celda Inferior Derecha (original) -->
             <td class="main-cell" style="width: 50%;">
                 <table class="nested-table">
                     <tr>
