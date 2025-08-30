@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla Estilo Imagen</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    table {
+      background-color: white; 
+      border-collapse: collapse;
+      width: 960px;
+      height: 800px;
+    }
+    table, td {
+      border: 1px solid black;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Tabla: 960px ancho 800px alto
+  </h1>
+  <table>
+    <tr height="50px">
+      <td colspan="2">
+        Fila 50px alto
+      </td>
+    </tr>
+
+    <tr>
+      <td width="50px">
+        Columna 50px ancho
+      </td>
+    </tr>
+    <tr height="50px">
+      <td colspan="2">
+        Fila 50px alto
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
