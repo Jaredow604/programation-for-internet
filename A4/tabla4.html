@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla 2x2</title>
+    <style>
+        /* Estilo para la tabla principal */
+        .tabla-principal {
+            width: 960px;
+            height: 800px;
+            border: 3px solid black; /* Borde exterior grueso */
+            border-collapse: collapse; /* Une los bordes de las celdas */
+            table-layout: fixed; /* Asegura que las celdas tengan el mismo tamaño */
+        }
+
+        /* Estilo para todas las celdas de la tabla principal */
+        .tabla-principal td {
+            width: 50%;
+            height: 50%;
+            border: 1px solid grey; /* Borde interior delgado */
+            padding: 20px; /* Espacio interior para el contenido */
+            vertical-align: top; /* Alinea el contenido en la parte superior */
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Estilos para las tablas anidadas (como en tu imagen) */
+        .tabla-anidada {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+
+        .tabla-anidada td {
+            border: 1px solid #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table class="tabla-principal">
+        <tr>
+            <td>
+                <p>Celda 1</p>
+                <p>(Aquí puedes poner la primera tabla de tu imagen)</p>
+            </td>
+            <td>
+                <p>Celda 2</p>
+                <p>(Aquí puedes poner la segunda tabla de tu imagen)</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="tabla-anidada3">
+                    <tr height="10px">
+                        <td colspan="2"></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="tabla-anidada">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
